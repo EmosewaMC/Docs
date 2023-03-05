@@ -26,12 +26,14 @@ Methods
 -------
 
 - Localize(key: string)
+- print(key: string)
 
 GameObject
 ----------
 
 - obj:GetVar(key: string)
 - obj:SetVar(key: string, value: any)
+- obj:DeleteVar(key: string, value: any)
 - obj:SetNetworkVar(key: string, value: any)
 - obj:GetNetworkVar(key: string) -> any
 - obj:SendLuaNotificationRequest{requestTarget: GameObject, messageName: string}
@@ -46,6 +48,7 @@ GameObject
 - obj:CheckListOfPreconditionsFromLua{PreconditionsToCheck: ?, requestingID: GameObject}
 - obj:RequestPickTypeUpdate()
 - obj:GetID()
+- obj:RefreshProxy()
 - obj:NotifyObject{ name: string, param1: int, ObjIDSender: ObjectID}
 
 Game Messages
